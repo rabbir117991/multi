@@ -1,0 +1,12 @@
+{
+  "ragModel":{
+    "OpenAI":["gpt-4o-mini"],
+    "Google Gemini": [ "gemini-1.5-flash-latest", "gemini-1.5-pro-latest"],
+    "Ollama": ["llava-llama3" , "bakllava"]
+  },
+  "summaryModel":{
+    "OpenAI": ["gpt-4o-mini"],
+    "Google Gemini": ["gemini-1.5-flash-latest" ,"gemini-1.5-pro-latest"],
+    "Ollama": ["llava:7b","llava-llama3","bakllava"]
+  }
+}
