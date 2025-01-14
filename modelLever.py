@@ -247,7 +247,7 @@ def askLLM(query):
         chain = StrOutputParser()(llmModel(generatePromptwithList()))
 
     else:
-        chain = generatePromptwithList | llmModel | StrOutputParser()
+        chain = StrOutputParser(llmModel(generatePromptwithList()))
     response = chain.invoke({"imageData": imageData, "txtData": txtData , "promptData": query})
     if (len(imageData) == 0):
         relevantImages = ""
